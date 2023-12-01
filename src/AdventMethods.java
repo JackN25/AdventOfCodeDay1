@@ -9,12 +9,17 @@ public class AdventMethods {
         int index = 0;
         int firstDigitIndex = 0;
         int firstDigitWordIndex = 0;
+        boolean firstDigitFound = false;
         String firstDigitWordActual = "";
         for (int i = 0; i < currentLine.length(); i++) {
             if (Character.isDigit(currentLine.charAt(i))) {
                 firstDigitIndex = i;
                 i = currentLine.length();
+                firstDigitFound = true;
             }
+        }
+        if (firstDigitFound = false) {
+            firstDigitIndex = -1;
         }
         if (currentLine.contains("one")) {
             if (currentLine.indexOf("one") <= firstDigitWordIndex) {
