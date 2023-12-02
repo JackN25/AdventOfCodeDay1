@@ -13,6 +13,7 @@ public class Main {
             while (s.hasNextLine()) {
                 String currentLine = s.nextLine();
                 AdventMethods a = new AdventMethods(currentLine);
+                a.replaceWords();
                 String firstDigit = a.findFirstNumber();
                 String lastDigit = a.findLastNumber();
                 sum += Integer.parseInt(firstDigit + lastDigit);
